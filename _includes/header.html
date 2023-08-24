@@ -19,7 +19,7 @@
               </h3>
               {%- for page in site.pages -%}
                 <ul class="uk-navbar-nav">
-                  <li><a href="{{ page.url | relative_url }}/#main-start">{{ page.title | escape }}</a></li>
+                  <li><a href="{{ page.url | relative_url }}#main-start">{{ page.title | escape }}</a></li>
                 </ul>
               {%- endfor -%}
             </div>
@@ -49,7 +49,7 @@
     <hr>
     {%- for page in site.pages -%}
       <ul class="uk-nav uk-nav-default">
-        <li class="slider-menu-link"><a href="{{ page.url | relative_url }}/#main-start">{{ page.title | escape }}</a></li>
+        <li class="slider-menu-link"><a href="{{ page.url | relative_url }}#main-start">{{ page.title | escape }}</a></li>
       </ul>
     {%- endfor -%}
     <br>

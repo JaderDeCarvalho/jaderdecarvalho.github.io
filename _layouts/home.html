@@ -5,7 +5,7 @@ layout: default
 <div class="uk-container">
   {%- if site.posts.size > 0 -%}
     {%- for post in site.posts -%}
-      <a class="post-item-link" href="{{ post.url | relative_url }}/#main-start">
+      <a class="post-item-link" href="{{ post.url | relative_url }}#main-start">
         <div class="uk-card uk-card-default uk-card-hover uk-grid-collapse uk-margin" uk-grid>
           <div class="uk-card-media-left uk-cover-container uk-width-2-5@m posts-canvas-container">
             <img src="{{ post.thumbnail }}" alt="" uk-cover>
