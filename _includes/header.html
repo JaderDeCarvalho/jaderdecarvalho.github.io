@@ -1,0 +1,66 @@
+<header id="page-start" class="uk-position-relative">
+  <div class="uk-cover-container header-cover-container" uk-height-viewport>
+    <h1>Develop better, faster and smarter!</h1>
+    <img src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="1800" height="1200" alt="" uk-cover>
+  </div>
+
+  <a id="main-start" href="#main-start" class="uk-badge uk-background-secondary scroll-down-button" uk-scroll>
+    <span uk-icon="arrow-down">
+  </a>
+
+  <div class="uk-position-top">
+    <div uk-sticky="start: 400; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-background-secondary; ">
+      <nav class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container">
+          <div uk-navbar>
+            <div class="uk-navbar-left uk-visible@m">
+              <h3 class="menu-title">
+                <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+              </h3>
+              {%- for page in site.pages -%}
+                <ul class="uk-navbar-nav">
+                  <li><a href="{{ page.url | relative_url }}/#main-start">{{ page.title | escape }}</a></li>
+                </ul>
+              {%- endfor -%}
+            </div>
+            <div class="uk-navbar-left uk-hidden@m">
+              <h3 class="menu-title">
+                <a href="{{ "/" | relative_url }}">JC</a>
+              </h3>
+            </div>
+            <div class="uk-navbar-right uk-hidden@m">
+              <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle href="#offcanvas-slide"></a>
+            </div>
+            <div class="uk-navbar-right uk-visible@m navbar-social-icons">
+              <a href="{{ site.linkedin_url }}" uk-icon="icon: linkedin" class="uk-icon-link" target="_blank"></a>|<a href="{{ site.github_url }}" uk-icon="icon: github" class="uk-icon-link" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<header id="offcanvas-slide" uk-offcanvas>
+  <div class="uk-offcanvas-bar uk-hidden@m">
+    <h3 class="menu-title">
+      <a href="{{ "/" | relative_url }}" class="menu-title-link">{{ site.title | escape }}</a>
+    </h3>
+    <hr>
+    {%- for page in site.pages -%}
+      <ul class="uk-nav uk-nav-default">
+        <li class="slider-menu-link"><a href="{{ page.url | relative_url }}/#main-start">{{ page.title | escape }}</a></li>
+      </ul>
+    {%- endfor -%}
+    <br>
+    <div class="navbar-social-icons">
+      <a href="{{ site.linkedin_url }}" uk-icon="icon: linkedin;" class="uk-icon-link" target="_blank"></a> | <a href="{{ site.github_url }}" uk-icon="icon: github" class="uk-icon-link" target="_blank"></a>
+    </div>
+  </div>
+</header>
+
+<br>
+	
+<a href="" class="uk-badge uk-background-secondary scroll-up-button" uk-scroll>
+  <span uk-icon="arrow-up">
+</a>
