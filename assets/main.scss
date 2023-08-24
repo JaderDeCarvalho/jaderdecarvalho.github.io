@@ -109,48 +109,39 @@ article {
 	margin-bottom: 40px;
 }
 
-.scroll-down-button {
-	position: absolute;
+.scroll-down-button, .scroll-up-button {
 	width: 45px;
 	height: 45px;
+	text-align: center;
+	border: 1px solid rgb(230, 230, 230);
+	color: white;
+	border-radius: 30px;
+	transition: 0.2s;
+}
+
+.scroll-down-button {
+	position: absolute;
 	bottom: 25px;
 	left: 50%;
 	text-align: center;
 	border: 1px solid rgb(230, 230, 230);
 	z-index: 3;
+
 }
 
-	.scroll-down-button {
-		color: white;
-		border-radius: 30px;
-	}
-
 	.scroll-down-button:hover {
-		color: rgb(140, 140, 140);
 		border-color: rgb(140, 140, 140);
 		background-color: rgb(17, 17, 17);
 	}
 
 .scroll-up-button {
 	position: fixed;
-	width: 45px;
-	height: 45px;
 	bottom: 40px;
 	right: 40px;
-	text-align: center;
 	z-index: 1;
-	border: 1px solid rgb(230, 230, 230);
-	
 }
 
-	.scroll-up-button {
-		border-color: rgb(230, 230, 230);
-		border-radius: 30px;
-		transition: 0.2s;
-	}
-
 	.scroll-up-button:hover {
-		color: rgb(140, 140, 140) !important;
 		border-color: rgb(140, 140, 140);
 		background-color: rgb(17, 17, 17);
 	}
