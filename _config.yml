@@ -28,6 +28,7 @@ twitter_username: ""
 github_username: ""
 linkedin_url: "https://www.linkedin.com/in/jaderdecarvalhomarquesxavier/"
 github_url: "https://github.com/JaderDeCarvalho"
+permalink: /:year-:month-:day/:title
 
 # Build settings
 theme: minima
